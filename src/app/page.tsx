@@ -12,7 +12,6 @@ const HomePage = () => {
       <Banner />
       <Projects />
       <Services />
-      {/* <Testimonials /> */}
     </div>
   );
 };

@@ -1,21 +1,21 @@
-import React from 'react'; // Ensure React is imported
+'use client';
+
+import React from 'react';
 
 import type { ButtonProps } from './Button';
 import Button from './Button';
 
 export interface ButtonPrimaryProps extends ButtonProps {
-  email?: string; // Add an email prop to be used in the mailto link
+  email?: string;
 }
 
 const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
   className = '',
-  email, // Destructure the email prop
+  email,
   ...args
 }) => {
-  // Define the click handler
   const handleClick = () => {
     if (email) {
-      // Use window.location.href to open the user's email client
       window.location.href = `mailto:${email}`;
     }
   };
@@ -24,7 +24,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
     <Button
       className={`rounded-full bg-primary-accent font-semibold text-black ${className}`}
       {...args}
-      onClick={handleClick} // Attach the click handler to the Button component
+      onClick={handleClick}
     />
   );
 };
