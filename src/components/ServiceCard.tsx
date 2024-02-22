@@ -1,7 +1,8 @@
-import ButtonSecondary from '@/shared/Buttons/ButtonSecondary';
-import type { ServiceType } from '@/types/global';
 import Image from 'next/image';
 import type { FC } from 'react';
+
+import ButtonSecondary from '@/shared/Buttons/ButtonSecondary';
+import type { ServiceType } from '@/types/global';
 
 const ServiceCard: FC<ServiceType> = ({ image, name, price }) => {
   return (

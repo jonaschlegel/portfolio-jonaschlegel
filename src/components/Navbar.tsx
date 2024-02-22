@@ -20,7 +20,7 @@ const Navbar = () => {
         <Logo />
       </div>
       <div className="z-30 lg:hidden">
-        <button type="button" className=" lg:hidden" onClick={handleToggleMenu}>
+        <button type="button" aria-label="Save" onClick={handleToggleMenu}>
           <MdDehaze />
         </button>
       </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
         className={`fixed top-0 z-10 flex  h-screen w-screen items-center bg-neutral-950 transition-all duration-500 lg:bg-transparent ${
           mobileOpen ? 'left-0' : '-left-full'
         }
-            lg:static lg:h-auto lg:w-auto`}
+            lg:static lg:size-auto`}
       >
         <ul className="flex w-full flex-col items-center gap-6 lg:flex-row lg:gap-8">
           {navLinks.map((navItem) => {

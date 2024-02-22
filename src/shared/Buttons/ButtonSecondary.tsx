@@ -13,7 +13,7 @@ const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({
 }) => {
   return (
     <Button
-      className={`rounded-full border font-semibold text-white disabled:bg-opacity-70 ${className}`}
+      className={`rounded-full border font-semibold text-white ${className}`}
       {...args}
     />
   );

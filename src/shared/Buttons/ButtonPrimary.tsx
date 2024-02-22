@@ -22,7 +22,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
 
   return (
     <Button
-      className={`rounded-full bg-primary-accent font-semibold text-black disabled:bg-opacity-70 ${className}`}
+      className={`rounded-full bg-primary-accent font-semibold text-black ${className}`}
       {...args}
       onClick={handleClick} // Attach the click handler to the Button component
     />

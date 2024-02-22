@@ -1,13 +1,10 @@
 'use client';
 
 import '@glidejs/glide/dist/css/glide.core.css';
-
+import { testimonialsData } from '@/data/content';
 import Glide, { Controls } from '@glidejs/glide/dist/glide.modular.esm';
 import { useEffect, useRef } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-
-import { testimonialsData } from '@/data/content';
-
 import ClientCard from './ClientCard';
 
 const Testimonials = () => {
