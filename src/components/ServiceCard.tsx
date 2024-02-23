@@ -16,7 +16,7 @@ const ServiceCard: FC<ServiceType> = ({
       <p className="mt-6 font-merriweather text-base font-semibold tracking-tight md:text-3xl">
         {name}
       </p>
-      <div className="group relative flex cursor-pointer flex-col justify-between py-8 md:flex-row ">
+      <div className="group relative flex flex-col justify-between py-8 md:flex-row ">
         <div className="basis-1/2">
           <p className="mt-2 text-sm text-neutral-400 md:text-base">
             {description}
@@ -34,8 +34,9 @@ const ServiceCard: FC<ServiceType> = ({
             <Image
               src={image}
               alt={name}
-              layout="responsive"
+              fill
               className="rounded-lg object-cover"
+              style={{ objectFit: 'cover' }}
             />
           </div>
           <div className="mt-4 flex justify-center">
