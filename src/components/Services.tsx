@@ -1,5 +1,7 @@
-import { serviceData } from '@/data/content';
 import React from 'react';
+
+import { serviceData } from '@/data/content';
+
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
