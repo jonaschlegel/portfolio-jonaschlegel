@@ -2,7 +2,7 @@ import type { FC, ReactNode } from 'react';
 
 const BannerText: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <p className="text-center font-merriweather text-xs font-bold tracking-tighter lg:text-2xl">
+    <p className="text-center font-merriweather text-xs font-bold tracking-tighter lg:text-xl">
       {children}
     </p>
   );

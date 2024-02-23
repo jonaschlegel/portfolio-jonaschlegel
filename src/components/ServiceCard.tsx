@@ -29,13 +29,14 @@ const ServiceCard: FC<ServiceType> = ({
             </ul>
           )}
         </div>
-        <div className="mb-6 ml-2 mt-4 w-full md:my-0 md:max-w-xs md:flex-1 lg:max-w-sm">
-          <div className="relative h-48 w-full md:h-auto">
+        <div className="my-10 ml-2 mt-4 w-full md:my-0 md:max-w-xs md:flex-1 lg:max-w-sm">
+          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+            {' '}
             <Image
               src={image}
               alt={name}
               fill
-              className="rounded-lg object-cover"
+              className="absolute left-0 top-5 size-full rounded-lg object-cover"
               style={{ objectFit: 'cover' }}
             />
           </div>

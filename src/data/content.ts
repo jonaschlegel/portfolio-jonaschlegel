@@ -12,27 +12,25 @@ import service3 from '@/images/services/service3.png';
 
 export const navLinks = [
   { name: 'Home', href: '/' },
-  { name: 'Work', href: '/#project' },
-  { name: 'Service', href: '/#service' },
+  { name: 'Projects', href: '/#project' },
+  { name: 'Services', href: '/#service' },
 ];
 
 export const heroSectionData = {
-  heading: 'Jona Schlegel.',
-  text: 'Based in Austria, Vienna, I am an archaeologists with 6 years of experience in academia, with a research focus on contemporary graffiti, archaeological stratigraphy and temporality. Since a few years I am creating illustrations and started in web development. Now I am working as a freelancer in science communication, knowledge organisation and web development.',
+  heading:
+    'Are you an archaeologists who wants to elevate in scientific communication?',
+  text: 'I specialize in transforming complex data into captivating narratives, designing engaging web presences, and creating illustrative content that speak for themselves. Let’s get together and craft a unique experience that aligns with your values and showcases your scientific insights.',
   statsData: [
-    { name: 'Happy Clients', number: '2+' },
-    { name: 'Completed Projects', number: '25+' },
-    { name: 'Satisfied Clients', number: '95%' },
+    { name: '(Scientific) Articles Written', number: '15' },
+    { name: 'Finished Illustrations', number: '253' },
+    { name: 'Finished Programming Projects', number: '13' },
   ],
   bgImage: heroBg,
   heroImage: jona,
 };
 
 export const bannerData = [
-  '(archaeological) Illustrator',
-  'Web Designer',
-  'Science Communicator',
-  'Research Data Manager',
+  'My name is Jona Schlegel and I am a freelance archaeologist based in Vienna, Austria. I specialize in scientific communication, web design, and illustration. I am passionate about creating engaging content that makes science accessible and inclusive. I am here to help you elevate your scientific communication and create a unique experience that aligns with your values and showcases your scientific insights. Let’s get together and craft a unique experience that aligns with your values and showcases your scientific insights.',
 ];
 
 export const projectsData = {

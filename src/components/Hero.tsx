@@ -8,8 +8,8 @@ import Stats from './Stats';
 
 const Hero = () => {
   return (
-    <div className="container relative mx-auto pt-4 sm:pb-8 lg:pb-36">
-      <div className="relative mb-8 aspect-[4/1] w-full overflow-hidden rounded-[2.5rem]">
+    <div className="container relative mx-auto mb-0 pb-0 pt-4  lg:pb-36">
+      <div className="relative mb-0 aspect-[4/1] w-full overflow-hidden rounded-[2.5rem]">
         <Image
           src={heroSectionData.bgImage}
           alt="hero header"
