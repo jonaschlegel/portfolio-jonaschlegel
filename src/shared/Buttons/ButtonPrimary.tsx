@@ -14,12 +14,13 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
   email,
   ...args
 }) => {
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault(); // Prevent the default action
     if (email) {
-      window.location.href = `mailto:${email}`;
+      // Open the email client in a new window/tab
+      window.open(`mailto:${email}`);
     }
   };
-
   return (
     <Button
       className={`rounded-full bg-primary-accent font-semibold text-black ${className}`}
