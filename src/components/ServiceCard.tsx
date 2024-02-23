@@ -13,7 +13,7 @@ const ServiceCard: FC<ServiceType> = ({
 }) => {
   return (
     <div>
-      <p className="mt-4 font-merriweather text-base font-semibold tracking-tight md:text-3xl">
+      <p className="mt-6 font-merriweather text-base font-semibold tracking-tight md:text-3xl">
         {name}
       </p>
       <div className="group relative flex cursor-pointer flex-col justify-between py-8 md:flex-row ">
