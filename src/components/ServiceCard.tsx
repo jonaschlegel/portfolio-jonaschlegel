@@ -23,8 +23,8 @@ const ServiceCard: FC<ServiceType> = ({
           </p>
           {options && (
             <ul className="mt-2 list-disc pl-5 text-sm text-neutral-400">
-              {options.map((option, index) => (
-                <li key={index}>{option}</li>
+              {options.map((option) => (
+                <li key={option}>{option}</li>
               ))}
             </ul>
           )}
