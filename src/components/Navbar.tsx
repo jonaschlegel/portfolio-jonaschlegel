@@ -15,7 +15,7 @@ const Navbar = () => {
     setMobileOpen((prev) => !prev);
   };
   return (
-    <div className="container mx-auto mb-12 flex items-center justify-between py-4">
+    <div className="container mx-auto mb-0 flex items-center justify-between pb-2 pt-4">
       <div className="z-30">
         <Logo />
       </div>
