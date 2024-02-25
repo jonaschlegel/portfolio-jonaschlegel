@@ -1,5 +1,3 @@
-import { BsBehance, BsInstagram, BsTwitter } from 'react-icons/bs';
-
 import profile05 from '@/images/clients/profile05.jpg';
 import heroBg from '@/images/herobg.webp';
 import jona from '@/images/jona.webp';
@@ -9,6 +7,13 @@ import project3 from '@/images/projects/project3.png';
 import service1 from '@/images/services/service1.png';
 import service2 from '@/images/services/service2.png';
 import service3 from '@/images/services/service3.png';
+import {
+  BsBehance,
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+} from 'react-icons/bs';
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -105,5 +110,7 @@ export const footerdata = {
     { Icon: BsBehance, href: 'https://www.behance.net/jonaschlegel1' },
     { Icon: BsInstagram, href: 'https://www.instagram.com/archaeoink/' },
     { Icon: BsTwitter, href: 'https://twitter.com/JonaSchlegel' },
+    { Icon: BsLinkedin, href: 'https://www.linkedin.com/in/jona-schlegel-942879153/' },
+    { Icon: BsGithub, href: 'https://github.com/jonaschlegel' },
   ],
 };
