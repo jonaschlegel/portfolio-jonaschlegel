@@ -1,6 +1,8 @@
-import { bannerData, jonaImage } from '@/data/content';
 import Image from 'next/image';
 import type { FC } from 'react';
+
+import { bannerData, jonaImage } from '@/data/content';
+
 import BannerText from './BannerText';
 
 const Banner: FC = () => {
