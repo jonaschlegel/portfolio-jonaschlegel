@@ -8,6 +8,7 @@ import {
 
 import profile01 from '@/images/clients/profile01.jpg';
 import heroBg from '@/images/herobg.webp';
+import jona from '@/images/jona.webp';
 import overview from '@/images/overview.webp';
 import project1 from '@/images/projects/project1.png';
 import project2 from '@/images/projects/project2.png';
@@ -24,7 +25,7 @@ export const navLinks = [
 
 export const heroSectionData = {
   heading:
-    'Are you searching for  way to elevate your visual science communication?',
+    'Are you looking for a way to elevate your visual science communication?',
   text: 'I transform data into narratives, web presences and create illustrative content.',
   statsData: [
     { name: '(Scientific) Articles Written', number: '15' },
@@ -36,8 +37,10 @@ export const heroSectionData = {
 };
 
 export const bannerData = [
-  'My name is Jona Schlegel and I am specializing in scientific communication, web design, and illustration. I am passionate about creating engaging content that makes science accessible and inclusive. I am here to help you elevate your scientific communication and create a unique showcase of your scientific insights.',
+  'Hi, my name is Jona Schlegel and I am specializing in scientific communication, web design, and illustration. I am passionate about creating engaging content that makes science accessible and inclusive. I am here to help you elevate your scientific communication and create a unique showcase of your scientific insights.',
 ];
+
+export const jonaImage = jona;
 
 export const projectsData = {
   heading: 'Featured Projects',

@@ -39,7 +39,7 @@ const Hero = () => {
           src={heroSectionData.heroImage}
           alt="hero header"
           fill
-          className="object-contain"
+          className="object-scale-down"
           sizes="100%"
         />{' '}
       </div>
