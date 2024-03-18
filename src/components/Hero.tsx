@@ -39,8 +39,7 @@ const Hero = () => {
           src={heroSectionData.heroImage}
           alt="hero header"
           fill
-          className="object-scale-down"
-          sizes="100%"
+          className="object-contain hover:opacity-60"
         />{' '}
       </div>
     </div>
