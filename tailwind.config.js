@@ -46,4 +46,9 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /glide*/,
+    },
+  ],
 };
