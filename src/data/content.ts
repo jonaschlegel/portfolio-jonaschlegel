@@ -1,12 +1,3 @@
-import profile05 from '@/images/clients/profile05.jpg';
-import heroBg from '@/images/herobg.webp';
-import jona from '@/images/jona.webp';
-import project1 from '@/images/projects/project1.png';
-import project2 from '@/images/projects/project2.png';
-import project3 from '@/images/projects/project3.png';
-import service1 from '@/images/services/service1.png';
-import service2 from '@/images/services/service2.png';
-import service3 from '@/images/services/service3.png';
 import {
   BsBehance,
   BsGithub,
@@ -14,6 +5,16 @@ import {
   BsLinkedin,
   BsTwitter,
 } from 'react-icons/bs';
+
+import profile01 from '@/images/clients/profile01.jpg';
+import heroBg from '@/images/herobg.webp';
+import overview from '@/images/overview.webp';
+import project1 from '@/images/projects/project1.png';
+import project2 from '@/images/projects/project2.png';
+import project3 from '@/images/projects/project3.png';
+import service1 from '@/images/services/service1.png';
+import service2 from '@/images/services/service2.png';
+import service3 from '@/images/services/service3.png';
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -23,19 +24,19 @@ export const navLinks = [
 
 export const heroSectionData = {
   heading:
-    'Are you an archaeologists who wants to elevate in scientific communication?',
-  text: 'I specialize in transforming complex data into captivating narratives, designing engaging web presences, and creating illustrative content that speak for themselves. Let’s get together and craft a unique experience that aligns with your values and showcases your scientific insights.',
+    'Are you searching for  way to elevate your visual science communication?',
+  text: 'I transform data into narratives, web presences and create illustrative content.',
   statsData: [
     { name: '(Scientific) Articles Written', number: '15' },
-    { name: 'Finished Illustrations', number: '253' },
-    { name: 'Finished Programming Projects', number: '13' },
+    { name: 'Illustrations', number: '253' },
+    { name: 'Programming Projects', number: '13' },
   ],
   bgImage: heroBg,
-  heroImage: jona,
+  heroImage: overview,
 };
 
 export const bannerData = [
-  'My name is Jona Schlegel and I am a freelance archaeologist based in Vienna, Austria. I specialize in scientific communication, web design, and illustration. I am passionate about creating engaging content that makes science accessible and inclusive. I am here to help you elevate your scientific communication and create a unique experience that aligns with your values and showcases your scientific insights. Let’s get together and craft a unique experience that aligns with your values and showcases your scientific insights.',
+  'My name is Jona Schlegel and I am specializing in scientific communication, web design, and illustration. I am passionate about creating engaging content that makes science accessible and inclusive. I am here to help you elevate your scientific communication and create a unique showcase of your scientific insights.',
 ];
 
 export const projectsData = {
@@ -84,7 +85,6 @@ export const serviceData = {
       options: [
         'Content Creation & Management: Engaging content for web and social media.',
         'Editorial Services: Writing and editing blog posts, articles, and scientific papers.',
-        'Workshop Facilitation: Training on effective science communication strategies and the creation of scientific accessible and inclusive illustrations.',
       ],
     },
   ],
@@ -92,10 +92,11 @@ export const serviceData = {
 
 export const testimonialsData = [
   {
-    name: 'Karl',
-    role: 'CTO of UpLeveled',
-    image: profile05,
-    comment: 'She is the best.',
+    name: 'Gabriella Campbell',
+    role: 'That Anthro Podcast',
+    image: profile01,
+    comment:
+      'I am so glad that I was able to work with Jona. Her art is incredible and I know this is only the beginning of big things for her. And thanks so for the extras! I know how much work and creativity Jona is put into this, so thanks.',
   },
 ];
 
@@ -110,7 +111,10 @@ export const footerdata = {
     { Icon: BsBehance, href: 'https://www.behance.net/jonaschlegel1' },
     { Icon: BsInstagram, href: 'https://www.instagram.com/archaeoink/' },
     { Icon: BsTwitter, href: 'https://twitter.com/JonaSchlegel' },
-    { Icon: BsLinkedin, href: 'https://www.linkedin.com/in/jona-schlegel-942879153/' },
+    {
+      Icon: BsLinkedin,
+      href: 'https://www.linkedin.com/in/jona-schlegel-942879153/',
+    },
     { Icon: BsGithub, href: 'https://github.com/jonaschlegel' },
   ],
 };

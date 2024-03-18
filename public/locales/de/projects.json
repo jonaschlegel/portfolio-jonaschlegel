@@ -1,0 +1,17 @@
+{
+  "heading": "Featured Projects",
+  "projectsList": [
+    {
+      "name": "Urban Chameleon",
+      "image": "/images/projects/project1.png"
+    },
+    {
+      "name": "Trowel Journal Blog",
+      "image": "/images/projects/project2.png"
+    },
+    {
+      "name": "archaeo Zine",
+      "image": "/images/projects/project3.png"
+    }
+  ]
+}

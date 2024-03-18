@@ -1,0 +1,18 @@
+{
+  "heading": "Let's Collaborate",
+  "navLinks": [
+    { "name": "About", "href": "/#about" },
+    { "name": "Project", "href": "/#project" },
+    { "name": "Service", "href": "/#service" }
+  ],
+  "socialLinks": [
+    { "icon": "BsBehance", "href": "https://www.behance.net/jonaschlegel1" },
+    { "icon": "BsInstagram", "href": "https://www.instagram.com/archaeoink/" },
+    { "icon": "BsTwitter", "href": "https://twitter.com/JonaSchlegel" },
+    {
+      "icon": "BsLinkedin",
+      "href": "https://www.linkedin.com/in/jona-schlegel-942879153/"
+    },
+    { "icon": "BsGithub", "href": "https://github.com/jonaschlegel" }
+  ]
+}

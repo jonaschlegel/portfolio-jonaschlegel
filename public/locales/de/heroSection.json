@@ -1,0 +1,11 @@
+{
+  "heading": "Suchst du jemanden der deine Wissenschaftskommunikation verbessert?",
+  "text": "I specialize in transforming complex data into captivating narratives, designing engaging web presences, and creating illustrative content that speaks for themselves. Let’s get together and craft a unique experience that aligns with your values and showcases your scientific insights.",
+  "statsData": [
+    { "name": "(Scientific) Articles Written", "number": "15" },
+    { "name": "Finished Illustrations", "number": "253" },
+    { "name": "Finished Programming Projects", "number": "13" }
+  ],
+  "bgImage": "herobg.webp",
+  "heroImage": "jona.webp"
+}
