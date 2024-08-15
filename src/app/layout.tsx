@@ -1,7 +1,6 @@
 import '@/styles/global.css';
-
 import type { Metadata } from 'next';
-
+import Head from 'next/head';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
@@ -37,6 +36,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-neutral-800 text-white">
+      <Head>
+        {/* Simple Analytics script */}
+        <script
+          async
+          defer
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
+        <noscript>
+          <img
+            src="https://queue.simpleanalyticscdn.com/noscript.gif"
+            alt=""
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </noscript>
+      </Head>
       <body>
         <Navbar />
         {children}
@@ -45,8 +59,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// Enable edge runtime but you are required to disable the `migrate` function in `src/libs/DB.ts`
-// Unfortunately, this also means it will also disable the automatic migration of the database
-// And, you will have to manually migrate it with `drizzle-kit push`
-// export const runtime = 'edge';
