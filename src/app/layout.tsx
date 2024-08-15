@@ -1,6 +1,8 @@
 import '@/styles/global.css';
+
 import type { Metadata } from 'next';
-import Head from 'next/head';
+import Script from 'next/script';
+
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
@@ -36,21 +38,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-neutral-800 text-white">
-      <Head>
-        {/* Simple Analytics script */}
-        <script
-          async
-          defer
+      <head>
+        {/* Simple Analytics Script */}
+        <Script
           src="https://scripts.simpleanalyticscdn.com/latest.js"
-        ></script>
-        <noscript>
-          <img
-            src="https://queue.simpleanalyticscdn.com/noscript.gif"
-            alt=""
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </noscript>
-      </Head>
+          strategy="afterInteractive"
+          defer
+        />
+      </head>
       <body>
         <Navbar />
         {children}
