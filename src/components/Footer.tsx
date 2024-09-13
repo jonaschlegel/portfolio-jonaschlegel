@@ -34,6 +34,10 @@ const Footer = () => {
             return <SocialItem key={socialItem.href} {...socialItem} />;
           })}
         </div>
+        {/* Footer text aligned to the left */}
+        <div className="mt-6 text-left text-sm">
+          © Jona Schlegel {new Date().getFullYear()}. All rights reserved.
+        </div>
       </div>
     </div>
   );

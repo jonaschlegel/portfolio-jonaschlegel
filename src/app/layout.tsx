@@ -1,10 +1,11 @@
 import '@/styles/global.css';
 
 import type { Metadata } from 'next';
-import Script from 'next/script';
 
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+
+import Tracking from './Tracking';
 
 export const metadata: Metadata = {
   icons: [
@@ -38,18 +39,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-neutral-800 text-white">
-      <head>
-        {/* Simple Analytics Script */}
-        <Script
-          src="https://scripts.simpleanalyticscdn.com/latest.js"
-          strategy="afterInteractive"
-          defer
-        />
-      </head>
       <body>
         <Navbar />
         {children}
         <Footer />
+        <Tracking />
       </body>
     </html>
   );
