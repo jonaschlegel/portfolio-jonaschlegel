@@ -4,12 +4,11 @@ const googleAnalyticsTrackingId = 'G-6S9J34MPR3';
 
 export default function Tracking() {
   return (
-    process.env.NEXT_PUBLIC_APP_ENV === 'production' && (
-      <>
-        <Script
-          id="_next-ga-init"
-          dangerouslySetInnerHTML={{
-            __html: `
+    <>
+      <Script
+        id="_next-ga-init"
+        dangerouslySetInnerHTML={{
+          __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag() {
                 window.dataLayer.push(arguments);
@@ -29,17 +28,17 @@ export default function Tracking() {
               gtag('js', new Date());
               gtag('config', '${googleAnalyticsTrackingId}');
             `,
-          }}
-        />
-        <Script
-          id="_next-ga"
-          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsTrackingId}`}
-        />
-        <Script
-          id="fb-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+        }}
+      />
+      <Script
+        id="_next-ga"
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsTrackingId}`}
+      />
+      <Script
+        id="fb-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
             !function(f,b,e,v,n,t,s) {
               if(f.fbq) return;
               n = f.fbq = function() {
@@ -60,18 +59,17 @@ export default function Tracking() {
             fbq('init', '812703364405783');
             fbq('track', 'PageView');
           `,
-          }}
-        />
-        <Script
-          src="https://scripts.simpleanalyticscdn.com/latest.js"
-          strategy="afterInteractive"
-          defer
-        />
-        <Script
-          id="cookieyes"
-          src="https://cdn-cookieyes.com/client_data/f49132772cc1d9f89dfe9534/script.js"
-        />
-      </>
-    )
+        }}
+      />
+      <Script
+        src="https://scripts.simpleanalyticscdn.com/latest.js"
+        strategy="afterInteractive"
+        defer
+      />
+      <Script
+        id="cookieyes"
+        src="https://cdn-cookieyes.com/client_data/f49132772cc1d9f89dfe9534/script.js"
+      />
+    </>
   );
 }
