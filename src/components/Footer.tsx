@@ -34,6 +34,11 @@ const Footer = () => {
             return <SocialItem key={socialItem.href} {...socialItem} />;
           })}
         </div>
+        <div className="mt-6 flex flex-col justify-center gap-1 text-center text-sm md:flex-row md:gap-4">
+          <Link href="/imprint">Imprint</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/terms-and-conditions">Terms and Conditions</Link>
+        </div>
         <div className="mt-6 flex justify-center text-[10px]">
           © Jona Schlegel {new Date().getFullYear()}. All rights reserved.
         </div>
