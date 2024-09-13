@@ -39,13 +39,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-neutral-800 text-white">
-      <head>
-        <Tracking />
-      </head>
       <body>
         <Navbar />
         {children}
         <Footer />
+        <Tracking />
       </body>
     </html>
   );
