@@ -4,8 +4,7 @@ const googleAnalyticsTrackingId = 'G-Y4C73JKFM9';
 
 export default function Tracking() {
   return (
-    process.env.NEXT_PUBLIC_APP_ENV === 'production' &&
-    !process.env.PLAYWRIGHT && (
+    process.env.NEXT_PUBLIC_APP_ENV === 'production' && (
       <>
         <Script
           id="_next-ga-init"
