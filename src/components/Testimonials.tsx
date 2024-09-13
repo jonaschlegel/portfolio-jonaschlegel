@@ -39,24 +39,24 @@ const Testimonials = () => {
               ))}
             </ul>
           </div>
-          {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
           <div
+            /* eslint-disable-next-line tailwindcss/no-custom-classname */
             className="glide__arrows absolute top-1/2 z-40 mb-6 flex w-full -translate-y-1/2 justify-between"
             data-glide-el="controls"
           >
-            {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
             <button
               type="button"
               aria-label="Previous testimonial"
               data-glide-dir="<"
+              /* eslint-disable-next-line tailwindcss/no-custom-classname */
               className="glide__arrow glide__arrow--left rounded-full border border-primary-accent p-2 text-xl text-primary-accent hover:text-white md:text-4xl"
             >
               <BsArrowLeftShort />
             </button>
-            {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
             <button
               type="button"
               aria-label="Next testimonial"
+              /* eslint-disable-next-line tailwindcss/no-custom-classname */
               className="glide__arrow glide__arrow--right rounded-full border border-primary-accent p-2 text-xl text-primary-accent hover:text-white md:text-4xl"
               data-glide-dir=">"
             >
