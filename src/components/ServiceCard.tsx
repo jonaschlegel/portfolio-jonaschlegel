@@ -41,7 +41,7 @@ const ServiceCard: FC<ServiceType> = ({
             />
           </div>
           <div className="mt-4 flex justify-center">
-            <ButtonSecondary email="jona.schlegel@gmail.com">
+            <ButtonSecondary email="archaeoink@jonaschlegel.com">
               {price ? (
                 <p className="text-sm text-neutral-300 md:text-base">
                   Starting at ${price}/ Hour
