@@ -14,7 +14,7 @@ const Footer = () => {
           {footerdata.heading}
         </p>
         <div>
-          <ButtonPrimary email="jona.schlegel@gmail.com">
+          <ButtonPrimary calendlyEventSlug="jonaschlegel">
             Work With Me
           </ButtonPrimary>
         </div>

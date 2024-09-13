@@ -27,7 +27,9 @@ const Hero = () => {
             {heroSectionData.text}
           </p>
           <div>
-            <ButtonPrimary className="mb-5">Let&apos;s Talk</ButtonPrimary>
+            <ButtonPrimary calendlyEventSlug="jonaschlegel" className="mb-5">
+              Let&apos;s Talk
+            </ButtonPrimary>
           </div>
         </div>
         <div>

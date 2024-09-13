@@ -2,6 +2,7 @@ import '@/styles/global.css';
 
 import type { Metadata } from 'next';
 
+import CalendlyScript from '@/components/CalendlyScript';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Tracking />
+        <CalendlyScript />
       </body>
     </html>
   );
