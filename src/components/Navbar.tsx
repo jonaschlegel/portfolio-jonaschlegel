@@ -71,7 +71,6 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-
           <li className="lg:hidden">
             <ButtonSecondary onClick={handleToggleMenu}>
               Contact Me
