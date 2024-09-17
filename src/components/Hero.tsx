@@ -20,9 +20,9 @@ const Hero = () => {
       </div>
       <div className="flex flex-col justify-between gap-6 md:flex-row">
         <div className="space-y-6 md:basis-[40%] 2xl:basis-[35%]">
-          <p className="font-merriweather text-5xl font-bold leading-snug tracking-tight xl:text-[4.5rem]">
+          <h1 className="font-merriweather text-5xl font-bold leading-snug tracking-tight xl:text-[4.5rem]">
             {heroSectionData.heading}
-          </p>
+          </h1>
           <p className="tracking-tight text-neutral-300">
             {heroSectionData.text}
           </p>
