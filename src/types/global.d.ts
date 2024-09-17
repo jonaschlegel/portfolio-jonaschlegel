@@ -9,6 +9,7 @@ type ServiceType = {
   name: string;
   price?: number;
   image: StaticImageData | string;
+  alt: string;
   description: string;
   options?: string[];
 };

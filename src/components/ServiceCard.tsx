@@ -6,6 +6,7 @@ import type { ServiceType } from '@/types/global';
 
 const ServiceCard: FC<ServiceType> = ({
   image,
+  alt,
   name,
   price,
   description,
@@ -13,9 +14,9 @@ const ServiceCard: FC<ServiceType> = ({
 }) => {
   return (
     <div>
-      <p className="mt-8 font-merriweather text-base font-semibold tracking-tight md:text-3xl">
+      <h2 className="mt-8 font-merriweather text-base font-semibold tracking-tight md:text-3xl">
         {name}
-      </p>
+      </h2>
       <div className="group relative flex flex-col justify-between py-8 md:flex-row ">
         <div className="basis-1/2">
           <p className="mt-2 text-sm text-neutral-400 md:text-base">
@@ -34,7 +35,7 @@ const ServiceCard: FC<ServiceType> = ({
             {' '}
             <Image
               src={image}
-              alt={name}
+              alt={alt}
               fill
               className="relative left-0 top-5 mt-2 size-full rounded-lg object-cover"
               style={{ objectFit: 'cover' }}

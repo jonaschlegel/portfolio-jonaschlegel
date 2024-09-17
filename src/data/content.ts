@@ -59,6 +59,7 @@ export const serviceData = {
       description:
         'Offering a holistic approach to web design and development tailored for archaeological projects. From UX/UI design to full-stack development, including interactive features like 3D visualizations and GIS data integration. Options include Basic Web Design, Advanced Development, and Storytelling Enhancement.',
       image: service1,
+      alt: "Portfolio showcasing Jona Schlegel's archaeology and scientific illustration services, including urban graffiti documentation and archaeological reconstructions. Featuring the Urban Chameleon project and blog layout design.",
       tools: 'Next.js, TypeScript, Tailwind CSS, Three.js, CesiumJS, Leaflet',
       options: [
         'Basic Web Design: UX/UI design focusing on archaeological content.',
@@ -71,6 +72,7 @@ export const serviceData = {
       description:
         'Creating visually compelling illustrations for archaeological and scientific communication. Services range from detailed artifact reconstructions to GIS-based map illustrations, designed to enhance public engagement and understanding.',
       image: service2,
+      alt: "Scientific illustrations of prehistoric tools and artefacts, such as stone hand axes, paint brushes, and recreations of ancient cave paintings and pottery. Demonstrating Jona Schlegel's artistic interpretations in archaeological illustration.",
       tools: 'Digital illustration tools, GIS software',
       options: [
         'Reconstruction Illustrations: Detailed depictions of historical scenes and/or artifacts.',
@@ -83,6 +85,7 @@ export const serviceData = {
       description:
         'Bridging the gap between scientific research and public engagement through content creation, editorial services, and workshop facilitation. Tailored to make science accessible and engaging to a broader audience.',
       image: service3,
+      alt: "Jona Schlegel's professional profile and portfolio on social media, highlighting services in digital art, archaeology illustrations, and public speaking. Display of illustrations and personal branding.",
       tools:
         'Content management systems, social media platforms, scientific writing and editing',
       options: [
