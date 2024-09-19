@@ -1,7 +1,9 @@
-import { footerdata } from '@/data/content';
-import ButtonPrimary from '@/shared/Buttons/ButtonPrimary';
 import Link from 'next/link';
 import React from 'react';
+
+import { footerdata } from '@/data/content';
+import ButtonPrimary from '@/shared/Buttons/ButtonPrimary';
+
 import SocialItem from './SocialItem';
 
 const Footer = () => {
