@@ -3,10 +3,10 @@ import React from 'react';
 const PrivacyPolicy = () => {
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="mb-8 text-center text-4xl font-bold">Privacy Policy</h1>
+      <h1>Privacy Policy</h1>
 
       <section className="mb-8">
-        <h2 className="mb-4 text-2xl font-semibold">1. Introduction</h2>
+        <h2 className="text-left">1. Introduction</h2>
         <p>
           Protecting your privacy is important to us. This privacy policy
           outlines how we collect, use, and protect your personal data when you

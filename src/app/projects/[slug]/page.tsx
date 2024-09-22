@@ -27,7 +27,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         height={600}
         className="my-8"
       />
-      <h1 className="text-2xl font-bold">{project?.name}</h1>
+      <h1>{project?.name}</h1>
 
       <MDXContent />
     </div>

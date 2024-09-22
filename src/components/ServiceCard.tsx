@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import type { FC } from 'react';
-
 import ButtonSecondary from '@/shared/Buttons/ButtonSecondary';
 import type { ServiceType } from '@/types/global';
+import Image from 'next/image';
+import type { FC } from 'react';
 
 const ServiceCard: FC<ServiceType> = ({
   image,
@@ -48,7 +47,7 @@ const ServiceCard: FC<ServiceType> = ({
                   Starting at ${price}/ Hour
                 </p>
               ) : (
-                <p className="text-sm text-neutral-300 md:text-base">
+                <p className="my-0 text-sm text-neutral-300 md:text-base">
                   Contact for pricing
                 </p>
               )}
