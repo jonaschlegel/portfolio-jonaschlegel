@@ -5,6 +5,7 @@ import overview from '@/images/overview.webp';
 import project1 from '@/images/projects/project1.png';
 import project2 from '@/images/projects/project2.png';
 import project3 from '@/images/projects/project3.png';
+import project4 from '@/images/projects/project4.png';
 import service1 from '@/images/services/service1.png';
 import service2 from '@/images/services/service2.png';
 import service3 from '@/images/services/service3.png';
@@ -73,6 +74,20 @@ export const projectsData = {
         'illustration',
         'archaeological illustration',
         'science-communication',
+      ],
+      isFeatured: true,
+    },
+    {
+      id: 'project4',
+      name: 'Exploring Archaeological Disciplines',
+      slug: 'exploring-archaeological-disciplines',
+      image: project4,
+      description:
+        'A comic-style illustration series showcasing various branches of archaeology to engage and educate a broader audience.',
+      services: [
+        'illustration',
+        'science communication',
+        'archaeological education',
       ],
       isFeatured: true,
     },
