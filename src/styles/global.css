@@ -21,6 +21,10 @@ h2 {
   @apply text-left font-merriweather text-2xl font-semibold md:text-3xl;
 }
 
+h3 {
+  @apply text-left text-lg font-medium text-gray-500 uppercase;
+}
+
 p {
   @apply tracking-tight text-neutral-300 my-6;
 }
@@ -31,6 +35,10 @@ ul {
 
 ol {
   @apply my-6 list-decimal list-outside space-y-2 ml-6;
+}
+
+.caption {
+  @apply text-sm text-gray-500 italic mb-10 mt-2 leading-tight;
 }
 
 .container {

@@ -20,16 +20,18 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <div className="container mx-auto py-16">
-      <Image
-        src={project?.image}
-        alt={project?.name}
-        width={800}
-        height={600}
-        className="my-8"
-      />
-      <h1>{project?.name}</h1>
-
-      <MDXContent />
+      <div className="relative mb-4 aspect-[2/1] overflow-hidden rounded-[2.5rem]">
+        <Image
+          src={project?.image}
+          alt={project?.name}
+          width={2000}
+          className="object-cover"
+        />
+      </div>
+      <div className="md:px-10 lg:px-[140px]">
+        <h1>{project?.name}</h1>
+        <MDXContent />
+      </div>
     </div>
   );
 }
