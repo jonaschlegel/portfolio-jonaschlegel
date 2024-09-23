@@ -2,10 +2,10 @@ import profile01 from '@/images/clients/profile01.jpg';
 import heroBg from '@/images/herobg.webp';
 import jona from '@/images/jona.webp';
 import overview from '@/images/overview.webp';
-import project1 from '@/images/projects/project1.png';
 import project2 from '@/images/projects/project2.png';
 import project3 from '@/images/projects/project3.png';
 import project4 from '@/images/projects/project4.png';
+import urbanChameleon from '@/images/projects/urban-chameleon.png';
 import service1 from '@/images/services/service1.png';
 import service2 from '@/images/services/service2.png';
 import service3 from '@/images/services/service3.png';
@@ -46,10 +46,10 @@ export const projectsData = {
   heading: 'Featured Projects',
   projectsList: [
     {
-      id: 'project1',
+      id: '1',
       name: 'Urban Chameleon',
       slug: 'urban-chameleon',
-      image: project1,
+      image: urbanChameleon,
       description:
         'An exploration of urban graffiti and its historical context.',
       services: ['web design', 'web development'],
