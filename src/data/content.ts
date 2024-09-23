@@ -2,9 +2,9 @@ import profile01 from '@/images/clients/profile01.jpg';
 import heroBg from '@/images/herobg.webp';
 import jona from '@/images/jona.webp';
 import overview from '@/images/overview.webp';
-import project2 from '@/images/projects/project2.png';
-import project3 from '@/images/projects/project3.png';
-import project4 from '@/images/projects/project4.png';
+import archaeoZine from '@/images/projects/archaeo-zine.png';
+import exploringArchaeologicalDisciplines from '@/images/projects/exploring-archaeological-disciplines.png';
+import trowelJournalBlog from '@/images/projects/trowel-journal-blog.png';
 import urbanChameleon from '@/images/projects/urban-chameleon.png';
 import service1 from '@/images/services/service1.png';
 import service2 from '@/images/services/service2.png';
@@ -56,19 +56,19 @@ export const projectsData = {
       isFeatured: true,
     },
     {
-      id: 'project2',
+      id: '2',
       name: 'Trowel Journal Blog',
       slug: 'trowel-journal-blog',
-      image: project2,
+      image: trowelJournalBlog,
       description: 'A blog platform for archaeological publications.',
       services: ['web development', 'web design', 'science communication'],
       isFeatured: true,
     },
     {
-      id: 'project3',
+      id: '3',
       name: 'archaeo Zine',
       slug: 'archaeo-zine',
-      image: project3,
+      image: archaeoZine,
       description: 'A zine promoting archaeological discoveries to the public.',
       services: [
         'illustration',
@@ -78,10 +78,10 @@ export const projectsData = {
       isFeatured: true,
     },
     {
-      id: 'project4',
+      id: '4',
       name: 'Exploring Archaeological Disciplines',
       slug: 'exploring-archaeological-disciplines',
-      image: project4,
+      image: exploringArchaeologicalDisciplines,
       description:
         'A comic-style illustration series showcasing various branches of archaeology to engage and educate a broader audience.',
       services: [
