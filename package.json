@@ -1,7 +1,6 @@
 {
   "name": "next-js-boilerplate",
   "version": "3.24.0",
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
