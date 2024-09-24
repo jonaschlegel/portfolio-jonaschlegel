@@ -4,6 +4,7 @@ import jona from '@/images/jona.webp';
 import overview from '@/images/overview.webp';
 import archaeoZine from '@/images/projects/archaeo-zine.png';
 import exploringArchaeologicalDisciplines from '@/images/projects/exploring-archaeological-disciplines.png';
+import romanBurial from '@/images/projects/roman-burial.png';
 import trowelJournalBlog from '@/images/projects/trowel-journal-blog.png';
 import urbanChameleon from '@/images/projects/urban-chameleon.png';
 import service1 from '@/images/services/service1.png';
@@ -89,6 +90,16 @@ export const projectsData = {
         'science communication',
         'archaeological education',
       ],
+      isFeatured: true,
+    },
+    {
+      id: '5',
+      name: 'Roman Burial',
+      slug: 'roman-burial',
+      image: romanBurial,
+      description:
+        'An archaeological illustration of a Roman burial of a mother and her daughter laying on top of a horse.',
+      services: ['archaeological illustration'],
       isFeatured: true,
     },
   ],
