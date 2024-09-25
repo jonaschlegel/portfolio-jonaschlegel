@@ -113,7 +113,7 @@ export const serviceData = {
       slug: 'web-design',
       name: 'Archaeological Web Design & Development',
       description:
-        'Offering a holistic approach to web design and development tailored for archaeological projects. From UX/UI design to full-stack development, including interactive features like 3D visualizations and GIS data integration. Options include Basic Web Design, Advanced Development, and Storytelling Enhancement.',
+        'Offering a holistic approach to web design and development tailored for archaeological projects...',
       image: service1,
       alt: 'Description of service1 image',
       tools: 'Next.js, TypeScript, Tailwind CSS, Three.js, CesiumJS, Leaflet',
@@ -122,13 +122,14 @@ export const serviceData = {
         'Advanced Development: Interactive features and data visualization.',
         'Storytelling Enhancement: Engaging audiences with narrative elements.',
       ],
+      pdfUrl: '@/data/Portfolio-WebDevelopment_JonaSchlegel_2024.pdf',
     },
     {
       id: 'illustration',
       slug: 'illustration',
       name: 'Scientific & Archaeological Illustration',
       description:
-        'Creating visually compelling illustrations for archaeological and scientific communication. Services range from detailed artifact reconstructions to GIS-based map illustrations, designed to enhance public engagement and understanding.',
+        'Creating visually compelling illustrations for archaeological and scientific communication...',
       image: service2,
       alt: 'Description of service2 image',
       tools: 'Digital illustration tools, GIS software',
@@ -137,13 +138,14 @@ export const serviceData = {
         'Educational Material Design: Illustrations for educational materials.',
         'GIS Map Illustrations: Visualizing data with GIS software.',
       ],
+      pdfUrl: '@/data/Portfolio-Illustration_JonaSchlegel_2024.pdf',
     },
     {
       id: 'science-communication',
       slug: 'science-communication',
       name: 'Science Communication Solutions',
       description:
-        'Bridging the gap between scientific research and public engagement through content creation, editorial services, and workshop facilitation. Tailored to make science accessible and engaging to a broader audience.',
+        'Bridging the gap between scientific research and public engagement...',
       image: service3,
       alt: 'Description of service3 image',
       tools: 'Content management systems, social media platforms',
@@ -151,6 +153,7 @@ export const serviceData = {
         'Content Creation & Management: Engaging content for web and social media.',
         'Editorial Services: Writing and editing articles and papers.',
       ],
+      pdfUrl: '@/data/Portfolio-Archaeology_JonaSchlegel_2024.pdf',
     },
   ],
 };

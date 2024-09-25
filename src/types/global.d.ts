@@ -20,6 +20,7 @@ type ServiceType = {
   image: StaticImageData | string;
   tools: string;
   options: string[];
+  pdfUrl?: string;
 };
 
 type ClientType = {
