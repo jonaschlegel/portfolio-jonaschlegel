@@ -21,7 +21,10 @@ const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({
         if (pdfUrl) {
           const link = document.createElement('a');
           link.href = pdfUrl;
-          link.download = 'Portfolio.pdf';
+
+          const fileName = pdfUrl.split('/').pop() || 'Portfolio.pdf';
+
+          link.download = fileName;
           link.click();
         }
       }}
