@@ -122,7 +122,7 @@ export const serviceData = {
         'Advanced Development: Interactive features and data visualization.',
         'Storytelling Enhancement: Engaging audiences with narrative elements.',
       ],
-      pdfUrl: '@/data/Portfolio-WebDevelopment_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Portfolio-WebDevelopment_JonaSchlegel_2024.pdf',
     },
     {
       id: 'illustration',
@@ -138,7 +138,7 @@ export const serviceData = {
         'Educational Material Design: Illustrations for educational materials.',
         'GIS Map Illustrations: Visualizing data with GIS software.',
       ],
-      pdfUrl: '@/data/Portfolio-Illustration_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Portfolio-Illustration_JonaSchlegel_2024.pdf',
     },
     {
       id: 'science-communication',
@@ -153,7 +153,7 @@ export const serviceData = {
         'Content Creation & Management: Engaging content for web and social media.',
         'Editorial Services: Writing and editing articles and papers.',
       ],
-      pdfUrl: '@/data/Portfolio-Archaeology_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Portfolio-Archaeology_JonaSchlegel_2024.pdf',
     },
   ],
 };
