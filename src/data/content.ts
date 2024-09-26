@@ -7,9 +7,9 @@ import exploringArchaeologicalDisciplines from '@/images/projects/exploring-arch
 import romanBurial from '@/images/projects/roman-burial.png';
 import trowelJournalBlog from '@/images/projects/trowel-journal-blog.png';
 import urbanChameleon from '@/images/projects/urban-chameleon.png';
-import service1 from '@/images/services/service1.png';
-import service2 from '@/images/services/service2.png';
-import service3 from '@/images/services/service3.png';
+import illustrating from '@/images/services/archaeological-illustrating.png';
+import archaeologySciComm from '@/images/services/archaeological-sci-comm.png';
+import webDevelopment from '@/images/services/web-development.png';
 import {
   BsBehance,
   BsGithub,
@@ -109,54 +109,55 @@ export const serviceData = {
   heading: 'Services',
   servicesList: [
     {
-      id: 'web-design',
-      slug: 'web-design',
-      name: 'Archaeological Web Design & Development',
+      id: 'archaeology',
+      slug: 'archaeology',
+      name: 'Archaeological Research & Communication',
       description:
-        'Offering a holistic approach to web design and development tailored for archaeological projects...',
-      image: service1,
-      alt: 'Description of service1 image',
-      tools: 'Next.js, TypeScript, Tailwind CSS, Three.js, CesiumJS, Leaflet',
+        'Providing comprehensive archaeological research and data interpretation services, with a focus on accessible communication through digital tools',
+      image: archaeologySciComm,
+      alt: 'Archaeology service image',
+      tools: 'ArcGIS, QGIS, Ground-penetrating radar, Geophysical surveys, CIDOC CRM',
       options: [
-        'Basic Web Design: UX/UI design focusing on archaeological content.',
-        'Advanced Development: Interactive features and data visualization.',
-        'Storytelling Enhancement: Engaging audiences with narrative elements.',
+        'Geophysical Prospection: Non-invasive surveys to uncover archaeological structures',
+        'Data Interpretation: Analysis and mapping of archaeological findings',
+        'Public Engagement: Making archaeological data accessible through interactive platforms and scientific communication',
       ],
-      pdfUrl: '/data/Portfolio-WebDevelopment_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Portfolio-Archaeology_JonaSchlegel_2024.pdf',
     },
     {
       id: 'illustration',
       slug: 'illustration',
       name: 'Scientific & Archaeological Illustration',
       description:
-        'Creating visually compelling illustrations for archaeological and scientific communication...',
-      image: service2,
-      alt: 'Description of service2 image',
-      tools: 'Digital illustration tools, GIS software',
+        'Specialising in creating detailed, scientifically accurate illustrations for archaeological publications, reconstructions, and educational materials',
+      image: illustrating,
+      alt: 'Illustration service image',
+      tools: 'Procreate, Inkscape, ArcGIS, QGIS',
       options: [
-        'Reconstruction Illustrations: Depictions of historical scenes.',
-        'Educational Material Design: Illustrations for educational materials.',
-        'GIS Map Illustrations: Visualizing data with GIS software.',
+        'Reconstruction Illustrations: Accurate depictions of historical scenes for academic use',
+        'Educational Illustrations: Visual content for teaching materials and public outreach',
+        'GIS-based Map Illustrations: Integrating archaeological data with geospatial visualisation',
       ],
       pdfUrl: '/data/Portfolio-Illustration_JonaSchlegel_2024.pdf',
     },
     {
-      id: 'science-communication',
-      slug: 'science-communication',
-      name: 'Science Communication Solutions',
+      id: 'web-development',
+      slug: 'web-development',
+      name: 'Web Development & Design for Archaeology',
       description:
-        'Bridging the gap between scientific research and public engagement...',
-      image: service3,
-      alt: 'Description of service3 image',
-      tools: 'Content management systems, social media platforms',
+        'Offering tailored web development and design solutions to enhance digital engagement for archaeological projects',
+      image: webDevelopment,
+      alt: 'Web Development service image',
+      tools: 'Next.js, TypeScript, Tailwind CSS, Three.js, CesiumJS, Leaflet',
       options: [
-        'Content Creation & Management: Engaging content for web and social media.',
-        'Editorial Services: Writing and editing articles and papers.',
+        'Website Development: Custom-built platforms for archaeological projects and databases',
+        'Interactive Features: Enhancing user engagement with data visualisation and 3D tools',
+        'UI/UX Design: Creating user-friendly interfaces for archaeological content presentation',
       ],
-      pdfUrl: '/data/Portfolio-Archaeology_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Portfolio-WebDevelopment_JonaSchlegel_2024.pdf',
     },
   ],
-};
+}
 
 export const testimonialsData = [
   {
@@ -164,7 +165,7 @@ export const testimonialsData = [
     role: 'That Anthro Podcast',
     image: profile01,
     comment:
-      'I am so glad that I was able to work with Jona. Her art is incredible and I know this is only the beginning of big things for her. And thanks so for the extras! I know how much work and creativity Jona is put into this, so thanks.',
+      'I am so glad that I was able to work with Jona. Her art is incredible and I know this is only the beginning of big things for her. And thanks for the extras! I know how much work and creativity Jona is put into this, so thanks.',
   },
 ];
 
