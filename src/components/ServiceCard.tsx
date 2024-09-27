@@ -48,7 +48,7 @@ const ServiceCard: FC<ServiceType> = ({
                 </p>
               ) : (
                 <p className="my-0 text-sm text-neutral-300 md:text-base">
-                  Download Portfolio Section
+                  Download Project Examples
                 </p>
               )}
             </ButtonSecondary>

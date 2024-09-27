@@ -70,15 +70,15 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li className="lg:hidden">
-            <ButtonSecondary onClick={handleToggleMenu}>
-              Contact Me
+          <li className="lg:hidden list-none">
+            <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel_2024-DRAFT.pdf"}>
+              Portfolio
             </ButtonSecondary>
           </li>
         </ul>
       </div>
       <div className="hidden lg:inline-flex">
-        <ButtonSecondary>Contact Me</ButtonSecondary>
+        <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel_2024-DRAFT.pdf"}>Portfolio</ButtonSecondary>
       </div>
     </div>
   );

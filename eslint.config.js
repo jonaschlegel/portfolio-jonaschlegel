@@ -10,7 +10,6 @@ import tailwindcss from 'eslint-plugin-tailwindcss';
 import testingLibrary from 'eslint-plugin-testing-library';
 import unusedImports from 'eslint-plugin-unused-imports';
 
-// Compatibility layer for using `extends` in eslint.config.js
 const compat = new FlatCompat();
 
 export default [
