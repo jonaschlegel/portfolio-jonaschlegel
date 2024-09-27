@@ -2,6 +2,7 @@ import profile01 from '@/images/clients/profile01.jpg';
 import heroBg from '@/images/herobg.webp';
 import jona from '@/images/jona.webp';
 import overview from '@/images/overview.webp';
+import adventuressCover from '@/images/projects/adventuress-cover.jpg';
 import archaeoZine from '@/images/projects/archaeo-zine.png';
 import exploringArchaeologicalDisciplines from '@/images/projects/exploring-archaeological-disciplines.png';
 import romanBurial from '@/images/projects/roman-burial.png';
@@ -102,6 +103,16 @@ export const projectsData = {
       services: ['archaeological illustration'],
       isFeatured: true,
     },
+    {
+      id: '6',
+      name: 'Adventuress Journal Cover',
+      slug: 'adventuress-cover',
+      image: adventuressCover,
+      description:
+        'A cover illustration for the first issue of the Adventuress Archaeologist journal.',
+      services: ['archaeological illustration'],
+      isFeatured: true,
+    }
   ],
 };
 
@@ -122,7 +133,7 @@ export const serviceData = {
         'Data Interpretation: Analysis and mapping of archaeological findings',
         'Public Engagement: Making archaeological data accessible through interactive platforms and scientific communication',
       ],
-      pdfUrl: '/data/Portfolio-Archaeology_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Archaeology_JonaSchlegel.pdf',
     },
     {
       id: 'illustration',
@@ -138,7 +149,7 @@ export const serviceData = {
         'Educational Illustrations: Visual content for teaching materials and public outreach',
         'GIS-based Map Illustrations: Integrating archaeological data with geospatial visualisation',
       ],
-      pdfUrl: '/data/Portfolio-Illustration_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/Illustration_JonaSchlegel.pdf',
     },
     {
       id: 'web-development',
@@ -154,7 +165,7 @@ export const serviceData = {
         'Interactive Features: Enhancing user engagement with data visualisation and 3D tools',
         'UI/UX Design: Creating user-friendly interfaces for archaeological content presentation',
       ],
-      pdfUrl: '/data/Portfolio-WebDevelopment_JonaSchlegel_2024.pdf',
+      pdfUrl: '/data/WebDevelopment_JonaSchlegel.pdf',
     },
   ],
 }

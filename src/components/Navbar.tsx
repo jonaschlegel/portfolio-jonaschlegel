@@ -71,14 +71,14 @@ const Navbar = () => {
             </li>
           ))}
           <li className="lg:hidden list-none">
-            <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel_2024-DRAFT.pdf"}>
+            <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel.pdf"}>
               Portfolio
             </ButtonSecondary>
           </li>
         </ul>
       </div>
       <div className="hidden lg:inline-flex">
-        <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel_2024-DRAFT.pdf"}>Portfolio</ButtonSecondary>
+        <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel.pdf"}>Portfolio</ButtonSecondary>
       </div>
     </div>
   );
