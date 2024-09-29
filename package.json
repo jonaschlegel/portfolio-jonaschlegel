@@ -64,6 +64,7 @@
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
+    "@types/mdx": "2.0.13",
     "@types/glidejs__glide": "^3.6.5",
     "@types/jest": "^29.5.13",
     "@types/node": "^22.5.5",
