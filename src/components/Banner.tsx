@@ -1,8 +1,7 @@
+import { bannerData, jonaImage } from '@/data/content';
+import ButtonSecondary from '@/shared/Buttons/ButtonSecondary';
 import Image from 'next/image';
 import type { FC } from 'react';
-
-import { bannerData, jonaImage } from '@/data/content';
-
 import BannerText from './BannerText';
 
 const Banner: FC = () => {
@@ -14,6 +13,11 @@ const Banner: FC = () => {
             {bannerData.map((bannerText) => (
               <BannerText key={bannerText}>{bannerText}</BannerText>
             ))}
+            <div className="mt-4 text-center">
+              <ButtonSecondary className="bg-primary-accent font-semibold text-black border-none" pdfUrl={"/data/Portfolio_JonaSchlegel.pdf"}>
+                Downlod my Portfolio
+              </ButtonSecondary>
+            </div>
           </div>
           <div className="shrink-0">
             <div className="relative aspect-square size-32 overflow-hidden rounded-full lg:size-48">

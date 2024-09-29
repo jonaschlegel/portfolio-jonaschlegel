@@ -1,3 +1,16 @@
+import profile01 from '@/images/clients/profile01.jpg';
+import heroBg from '@/images/herobg.webp';
+import jona from '@/images/jona.webp';
+import overview from '@/images/overview.webp';
+import adventuressCover from '@/images/projects/adventuress-cover.jpg';
+import archaeoZine from '@/images/projects/archaeo-zine.png';
+import exploringArchaeologicalDisciplines from '@/images/projects/exploring-archaeological-disciplines.png';
+import romanBurial from '@/images/projects/roman-burial.png';
+import trowelJournalBlog from '@/images/projects/trowel-journal-blog.png';
+import urbanChameleon from '@/images/projects/urban-chameleon.png';
+import illustrating from '@/images/services/archaeological-illustrating.png';
+import archaeologySciComm from '@/images/services/archaeological-sci-comm.png';
+import webDevelopment from '@/images/services/web-development.png';
 import {
   BsBehance,
   BsGithub,
@@ -6,20 +19,9 @@ import {
   BsTwitter,
 } from 'react-icons/bs';
 
-import profile01 from '@/images/clients/profile01.jpg';
-import heroBg from '@/images/herobg.webp';
-import jona from '@/images/jona.webp';
-import overview from '@/images/overview.webp';
-import project1 from '@/images/projects/project1.png';
-import project2 from '@/images/projects/project2.png';
-import project3 from '@/images/projects/project3.png';
-import service1 from '@/images/services/service1.png';
-import service2 from '@/images/services/service2.png';
-import service3 from '@/images/services/service3.png';
-
 export const navLinks = [
   { name: 'Home', href: '/' },
-  { name: 'Projects', href: '/#project' },
+  { name: 'Featured Projects', href: '/#project' },
   { name: 'Services', href: '/#service' },
 ];
 
@@ -45,9 +47,72 @@ export const jonaImage = jona;
 export const projectsData = {
   heading: 'Featured Projects',
   projectsList: [
-    { name: 'Urban Chameleon', image: project1 },
-    { name: 'Trowel Journal Blog', image: project2 },
-    { name: 'archaeo Zine', image: project3 },
+    {
+      id: '1',
+      name: 'Urban Chameleon',
+      slug: 'urban-chameleon',
+      image: urbanChameleon,
+      description:
+        'An exploration of urban graffiti and its historical context.',
+      services: ['web design', 'web development'],
+      isFeatured: true,
+    },
+    {
+      id: '2',
+      name: 'Trowel Journal Blog',
+      slug: 'trowel-journal-blog',
+      image: trowelJournalBlog,
+      description: 'A blog platform for archaeological publications.',
+      services: ['web development', 'web design', 'science communication'],
+      isFeatured: true,
+    },
+    {
+      id: '3',
+      name: 'archaeo Zine',
+      slug: 'archaeo-zine',
+      image: archaeoZine,
+      description: 'A zine promoting archaeological discoveries to the public.',
+      services: [
+        'illustration',
+        'archaeological illustration',
+        'science-communication',
+      ],
+      isFeatured: true,
+    },
+    {
+      id: '4',
+      name: 'Exploring Archaeological Disciplines',
+      slug: 'exploring-archaeological-disciplines',
+      image: exploringArchaeologicalDisciplines,
+      description:
+        'A comic-style illustration series showcasing various branches of archaeology to engage and educate a broader audience.',
+      services: [
+        'illustration',
+        'science communication',
+        'archaeological education',
+      ],
+      isFeatured: true,
+    },
+    {
+      id: '5',
+      name: 'Roman Burial',
+      slug: 'roman-burial',
+      image: romanBurial,
+      description:
+        'An archaeological illustration of a Roman burial of a mother and her daughter laying on top of a horse.',
+      services: ['archaeological illustration'],
+      isFeatured: true,
+    },
+    {
+      id: '6',
+      name: 'Adventuress Journal Cover',
+      slug: 'adventuress-cover',
+      image: adventuressCover,
+      description:
+        'A cover illustration for the first issue of the Adventuress Archaeologist journal.',
+      services: ['archaeological illustration'],
+      isFeatured: true,
+    }
   ],
 };
 
@@ -55,46 +120,55 @@ export const serviceData = {
   heading: 'Services',
   servicesList: [
     {
-      name: 'Archaeological Web Design & Development',
+      id: 'archaeology',
+      slug: 'archaeology',
+      name: 'Archaeological Research & Communication',
       description:
-        'Offering a holistic approach to web design and development tailored for archaeological projects. From UX/UI design to full-stack development, including interactive features like 3D visualizations and GIS data integration. Options include Basic Web Design, Advanced Development, and Storytelling Enhancement.',
-      image: service1,
-      alt: "Portfolio showcasing Jona Schlegel's archaeology and scientific illustration services, including urban graffiti documentation and archaeological reconstructions. Featuring the Urban Chameleon project and blog layout design.",
-      tools: 'Next.js, TypeScript, Tailwind CSS, Three.js, CesiumJS, Leaflet',
+        'Providing comprehensive archaeological research and data interpretation services, with a focus on accessible communication through digital tools',
+      image: archaeologySciComm,
+      alt: 'Archaeology service image',
+      tools: 'ArcGIS, QGIS, Ground-penetrating radar, Geophysical surveys, CIDOC CRM',
       options: [
-        'Basic Web Design: UX/UI design focusing on archaeological content.',
-        'Advanced Development: Incorporating interactive features and data visualization.',
-        'Storytelling Enhancement: Engaging audiences with narrative elements.',
+        'Geophysical Prospection: Non-invasive surveys to uncover archaeological structures',
+        'Data Interpretation: Analysis and mapping of archaeological findings',
+        'Public Engagement: Making archaeological data accessible through interactive platforms and scientific communication',
       ],
+      pdfUrl: '/data/Archaeology_JonaSchlegel.pdf',
     },
     {
+      id: 'illustration',
+      slug: 'illustration',
       name: 'Scientific & Archaeological Illustration',
       description:
-        'Creating visually compelling illustrations for archaeological and scientific communication. Services range from detailed artifact reconstructions to GIS-based map illustrations, designed to enhance public engagement and understanding.',
-      image: service2,
-      alt: "Scientific illustrations of prehistoric tools and artefacts, such as stone hand axes, paint brushes, and recreations of ancient cave paintings and pottery. Demonstrating Jona Schlegel's artistic interpretations in archaeological illustration.",
-      tools: 'Digital illustration tools, GIS software',
+        'Specialising in creating detailed, scientifically accurate illustrations for archaeological publications, reconstructions, and educational materials',
+      image: illustrating,
+      alt: 'Illustration service image',
+      tools: 'Procreate, Inkscape, ArcGIS, QGIS',
       options: [
-        'Reconstruction Illustrations: Detailed depictions of historical scenes and/or artifacts.',
-        'Educational Material Design: Illustrations for books, comics, and educational materials usable for school lectures.',
-        'GIS Map Illustrations: Visualizing data with advanced GIS software for papers, presentations and websites.',
+        'Reconstruction Illustrations: Accurate depictions of historical scenes for academic use',
+        'Educational Illustrations: Visual content for teaching materials and public outreach',
+        'GIS-based Map Illustrations: Integrating archaeological data with geospatial visualisation',
       ],
+      pdfUrl: '/data/Illustration_JonaSchlegel.pdf',
     },
     {
-      name: 'Science Communication Solutions',
+      id: 'web-development',
+      slug: 'web-development',
+      name: 'Web Development & Design for Archaeology',
       description:
-        'Bridging the gap between scientific research and public engagement through content creation, editorial services, and workshop facilitation. Tailored to make science accessible and engaging to a broader audience.',
-      image: service3,
-      alt: "Jona Schlegel's professional profile and portfolio on social media, highlighting services in digital art, archaeology illustrations, and public speaking. Display of illustrations and personal branding.",
-      tools:
-        'Content management systems, social media platforms, scientific writing and editing',
+        'Offering tailored web development and design solutions to enhance digital engagement for archaeological projects',
+      image: webDevelopment,
+      alt: 'Web Development service image',
+      tools: 'Next.js, TypeScript, Tailwind CSS, Three.js, CesiumJS, Leaflet',
       options: [
-        'Content Creation & Management: Engaging content for web and social media.',
-        'Editorial Services: Writing and editing blog posts, articles, and scientific papers.',
+        'Website Development: Custom-built platforms for archaeological projects and databases',
+        'Interactive Features: Enhancing user engagement with data visualisation and 3D tools',
+        'UI/UX Design: Creating user-friendly interfaces for archaeological content presentation',
       ],
+      pdfUrl: '/data/WebDevelopment_JonaSchlegel.pdf',
     },
   ],
-};
+}
 
 export const testimonialsData = [
   {
@@ -102,7 +176,7 @@ export const testimonialsData = [
     role: 'That Anthro Podcast',
     image: profile01,
     comment:
-      'I am so glad that I was able to work with Jona. Her art is incredible and I know this is only the beginning of big things for her. And thanks so for the extras! I know how much work and creativity Jona is put into this, so thanks.',
+      'I am so glad that I was able to work with Jona. Her art is incredible and I know this is only the beginning of big things for her. And thanks for the extras! I know how much work and creativity Jona is put into this, so thanks.',
   },
 ];
 

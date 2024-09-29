@@ -9,16 +9,36 @@ html {
   scroll-padding: 4rem;
 }
 
-.content p {
-  @apply my-6;
+body, p, div {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.content ul {
-  @apply my-6;
+h1 {
+  @apply font-merriweather text-5xl font-bold leading-snug tracking-tight xl:text-[4.5rem];
 }
 
-.d {
-  border: 1px solid red;
+h2 {
+  @apply text-left font-merriweather text-2xl font-semibold md:text-3xl;
+}
+
+h3 {
+  @apply text-left text-lg font-medium text-gray-500 uppercase;
+}
+
+p {
+  @apply tracking-tight text-neutral-300 my-6;
+}
+
+ul {
+  @apply my-6 list-disc list-outside space-y-2 ml-6;
+}
+
+ol {
+  @apply my-6 list-decimal list-outside space-y-2 ml-6;
+}
+
+.caption {
+  @apply text-sm text-gray-500 italic mb-10 mt-2 leading-tight;
 }
 
 .container {

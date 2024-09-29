@@ -1,10 +1,13 @@
-import React from 'react';
-
 import { projectsData } from '@/data/content';
-
+import React from 'react';
 import ProjectCard from './ProjectCard';
 
-const Projects = () => {
+const FeaturedProjects = () => {
+  const featuredProjects = projectsData.projectsList
+    .filter((project) => project.isFeatured)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 4);
+
   return (
     <div className="container mx-auto py-16" id="project">
       <div className="mb-6">
@@ -13,12 +16,12 @@ const Projects = () => {
         </h2>
       </div>
       <div className="grid grid-cols-12 gap-6">
-        {projectsData.projectsList.map((project) => {
-          return <ProjectCard key={project.name} {...project} />;
-        })}
+        {featuredProjects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default FeaturedProjects;

@@ -3,15 +3,19 @@
   "projectsList": [
     {
       "name": "Urban Chameleon",
-      "image": "/images/projects/project1.png"
+      "image": "/images/projects/urban-chameleon.png"
     },
     {
       "name": "Trowel Journal Blog",
-      "image": "/images/projects/project2.png"
+      "image": "/images/projects/trowel-journal-blog.png"
     },
     {
       "name": "archaeo Zine",
-      "image": "/images/projects/project3.png"
+      "image": "/images/projects/archaeo-zine.png"
+    },
+    {
+      "name": "archaeological Disciplines",
+      "image": "/images/projects/exploring-archaeological-disciplines.png"
     }
   ]
 }

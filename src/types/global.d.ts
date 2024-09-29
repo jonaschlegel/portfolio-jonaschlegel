@@ -1,17 +1,26 @@
 import type { StaticImageData } from 'next/image';
 
 type ProjectType = {
+  id: string;
   name: string;
-  image: StaticImageData | string;
+  slug: string;
+  image: StaticImageData;
+  description: string;
+  services: string[];
+  isFeatured: boolean;
 };
 
 type ServiceType = {
+  id: string;
+  slug: string;
   name: string;
+  description: string;
+  alt: string;
   price?: number;
   image: StaticImageData | string;
-  alt: string;
-  description: string;
-  options?: string[];
+  tools: string;
+  options: string[];
+  pdfUrl?: string;
 };
 
 type ClientType = {
@@ -30,3 +39,8 @@ type SocialType = {
   Icon: IconType;
   href: string;
 };
+
+declare module '*.mdx' {
+  let MDXComponent: (props: any) => JSX.Element;
+  export default MDXComponent;
+}

@@ -1,29 +1,31 @@
 'use client';
 
 import React from 'react';
-
 import type { ButtonProps } from './Button';
 import Button from './Button';
 
 export interface ButtonSecondaryProps extends ButtonProps {
-  email?: string;
+  pdfUrl?: string;
 }
 
 const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({
   className = '',
-  email,
+  pdfUrl,
   ...args
 }) => {
-  // Directly return the Button component
   return (
     <Button
       className={`rounded-full border font-semibold text-white ${className}`}
       {...args}
-      // Use a lambda function to match the expected onClick signature
       onClick={() => {
-        if (email) {
-          // Open the email client in a new window/tab
-          window.location.href = `mailto:${email}`;
+        if (pdfUrl) {
+          const link = document.createElement('a');
+          link.href = pdfUrl;
+
+          const fileName = pdfUrl.split('/').pop() || 'Portfolio.pdf';
+
+          link.download = fileName;
+          link.click();
         }
       }}
     />

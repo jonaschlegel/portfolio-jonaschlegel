@@ -1,13 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import { FiExternalLink } from 'react-icons/fi';
-import { MdDehaze } from 'react-icons/md';
-
 import { navLinks } from '@/data/content';
 import Logo from '@/logo/Logo';
 import Button from '@/shared/Buttons/Button';
 import ButtonSecondary from '@/shared/Buttons/ButtonSecondary';
+import { useState } from 'react';
+import { FiExternalLink } from 'react-icons/fi';
+import { MdDehaze } from 'react-icons/md';
 
 const externalLinks = [
   {
@@ -50,14 +49,14 @@ const Navbar = () => {
       >
         <ul className="flex w-full flex-col items-center gap-6 lg:flex-row lg:gap-8">
           {navLinks.map((navItem) => (
-            <li key={navItem.name}>
+            <li className="list-none" key={navItem.name}>
               <Button href={navItem.href} onClick={handleToggleMenu}>
                 {navItem.name}
               </Button>
             </li>
           ))}
           {externalLinks.map((link) => (
-            <li key={link.name}>
+            <li className="list-none" key={link.name}>
               <a
                 href={link.href}
                 target="_blank"
@@ -71,15 +70,15 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li className="lg:hidden">
-            <ButtonSecondary onClick={handleToggleMenu}>
-              Contact Me
+          <li className="lg:hidden list-none">
+            <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel.pdf"}>
+              Portfolio
             </ButtonSecondary>
           </li>
         </ul>
       </div>
       <div className="hidden lg:inline-flex">
-        <ButtonSecondary>Contact Me</ButtonSecondary>
+        <ButtonSecondary pdfUrl={"/data/Portfolio_JonaSchlegel.pdf"}>Portfolio</ButtonSecondary>
       </div>
     </div>
   );

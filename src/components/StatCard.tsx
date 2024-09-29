@@ -1,14 +1,15 @@
-import type { FC } from 'react';
-
 import type { StatType } from '@/types/global';
+import type { FC } from 'react';
 
 const StatCard: FC<StatType> = ({ name, number }) => {
   return (
     <div className="flex flex-col items-center font-merriweather leading-snug">
-      <p className="text-2xl font-bold tracking-tighter lg:text-4xl">
+      <h3 className="text-2xl font-bold tracking-tighter lg:text-4xl">
         {number}
-      </p>
-      <p className="text-center text-xs text-neutral-300 lg:text-sm">{name}</p>
+      </h3>
+      <h4 className="text-center text-xs text-neutral-300 lg:text-sm">
+        {name}
+      </h4>
     </div>
   );
 };
