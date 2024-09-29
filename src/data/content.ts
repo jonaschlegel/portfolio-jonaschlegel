@@ -52,9 +52,8 @@ export const projectsData = {
       name: 'Urban Chameleon',
       slug: 'urban-chameleon',
       image: urbanChameleon,
-      description:
-        'An exploration of urban graffiti and its historical context.',
-      services: ['web design', 'web development'],
+      description: 'An exploration of urban graffiti and its historical context.',
+      services: ['web development & design for archaeology'],
       isFeatured: true,
     },
     {
@@ -63,7 +62,7 @@ export const projectsData = {
       slug: 'trowel-journal-blog',
       image: trowelJournalBlog,
       description: 'A blog platform for archaeological publications.',
-      services: ['web development', 'web design', 'science communication'],
+      services: ['web development & design for archaeology', 'archaeological aesearch & communication'],
       isFeatured: true,
     },
     {
@@ -72,11 +71,7 @@ export const projectsData = {
       slug: 'archaeo-zine',
       image: archaeoZine,
       description: 'A zine promoting archaeological discoveries to the public.',
-      services: [
-        'illustration',
-        'archaeological illustration',
-        'science-communication',
-      ],
+      services: ['scientific & archaeological illustration', 'archaeological research & communication'],
       isFeatured: true,
     },
     {
@@ -84,13 +79,8 @@ export const projectsData = {
       name: 'Exploring Archaeological Disciplines',
       slug: 'exploring-archaeological-disciplines',
       image: exploringArchaeologicalDisciplines,
-      description:
-        'A comic-style illustration series showcasing various branches of archaeology to engage and educate a broader audience.',
-      services: [
-        'illustration',
-        'science communication',
-        'archaeological education',
-      ],
+      description: 'A comic-style illustration series showcasing various branches of archaeology.',
+      services: ['scientific & archaeological illustration', 'archaeological research & communication'],
       isFeatured: true,
     },
     {
@@ -98,9 +88,8 @@ export const projectsData = {
       name: 'Roman Burial',
       slug: 'roman-burial',
       image: romanBurial,
-      description:
-        'An archaeological illustration of a Roman burial of a mother and her daughter laying on top of a horse.',
-      services: ['archaeological illustration'],
+      description: 'An archaeological illustration of a Roman burial.',
+      services: ['scientific & archaeological illustration'],
       isFeatured: true,
     },
     {
@@ -108,9 +97,8 @@ export const projectsData = {
       name: 'Adventuress Journal Cover',
       slug: 'adventuress-cover',
       image: adventuressCover,
-      description:
-        'A cover illustration for the first issue of the Adventuress Archaeologist journal.',
-      services: ['archaeological illustration'],
+      description: 'A cover illustration for the first issue of the Adventuress Archaeologist journal.',
+      services: ['scientific & archaeological illustration'],
       isFeatured: true,
     }
   ],

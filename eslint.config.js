@@ -1,26 +1,22 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import jest from 'eslint-plugin-jest';
-import jestDom from 'eslint-plugin-jest-dom';
-import jestFormatting from 'eslint-plugin-jest-formatting';
-import playwright from 'eslint-plugin-playwright';
-import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import storybook from 'eslint-plugin-storybook';
-import tailwindcss from 'eslint-plugin-tailwindcss';
-import testingLibrary from 'eslint-plugin-testing-library';
-import unusedImports from 'eslint-plugin-unused-imports';
+const { FlatCompat } = require('@eslint/eslintrc');
+const typescriptEslint = require('@typescript-eslint/eslint-plugin');
+const jest = require('eslint-plugin-jest');
+const jestDom = require('eslint-plugin-jest-dom');
+const jestFormatting = require('eslint-plugin-jest-formatting');
+const playwright = require('eslint-plugin-playwright');
+const simpleImportSort = require('eslint-plugin-simple-import-sort');
+const storybook = require('eslint-plugin-storybook');
+const tailwindcss = require('eslint-plugin-tailwindcss');
+const testingLibrary = require('eslint-plugin-testing-library');
+const unusedImports = require('eslint-plugin-unused-imports');
 
 const compat = new FlatCompat();
 
-export default [
+module.exports = [
   {
     ignores: ['node_modules', 'out', '.storybook'],
   },
-  ...compat.extends([
-    'airbnb-base',
-    'next/core-web-vitals',
-    'plugin:prettier/recommended',
-  ]),
+  ...compat.extends('airbnb-base', 'next/core-web-vitals', 'plugin:prettier/recommended'),
   {
     rules: {
       'prettier/prettier': ['error', { singleQuote: true, endOfLine: 'auto' }],
@@ -34,13 +30,13 @@ export default [
       'tailwindcss': tailwindcss,
       'simple-import-sort': simpleImportSort,
     },
-    ...compat.extends([
+    ...compat.extends(
       'plugin:tailwindcss/recommended',
       'airbnb',
       'airbnb-typescript',
       'next/core-web-vitals',
-      'plugin:prettier/recommended',
-    ]),
+      'plugin:prettier/recommended'
+    ),
     languageOptions: {
       parserOptions: {
         project: './tsconfig.json',
@@ -78,23 +74,23 @@ export default [
       'testing-library': testingLibrary,
       'jest-dom': jestDom,
     },
-    ...compat.extends([
+    ...compat.extends(
       'plugin:jest/recommended',
       'plugin:jest-formatting/recommended',
       'plugin:testing-library/react',
-      'plugin:jest-dom/recommended',
-    ]),
+      'plugin:jest-dom/recommended'
+    ),
   },
   {
     files: ['**/*.spec.ts'],
-    ...compat.extends(['plugin:playwright/recommended']),
+    ...compat.extends('plugin:playwright/recommended'),
   },
   {
     files: ['*.stories.*'],
     plugins: {
       'storybook': storybook,
     },
-    ...compat.extends(['plugin:storybook/recommended']),
+    ...compat.extends('plugin:storybook/recommended'),
     rules: {
       'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     },

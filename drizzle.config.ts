@@ -4,8 +4,11 @@ import type { Config } from 'drizzle-kit';
 export default {
   out: './migrations',
   schema: './src/models/schema.ts',
-  driver: 'libsql',
+  dialect: 'sqlite',
+  driver: 'd1-http',
   dbCredentials: {
-    url: process.env.DATABASE_URL ?? '',
+    accountId: process.env.ACCOUNT_ID ?? '',
+    databaseId: process.env.DATABASE_ID ?? '',
+    token: process.env.DATABASE_TOKEN ?? '',
   },
 } satisfies Config;

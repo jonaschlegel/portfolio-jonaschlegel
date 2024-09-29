@@ -1,9 +1,14 @@
 import ButtonSecondary from '@/shared/Buttons/ButtonSecondary';
-import type { ServiceType } from '@/types/global';
+import type { ProjectType, ServiceType } from '@/types/global';
 import Image from 'next/image';
+import Link from 'next/link';
 import type { FC } from 'react';
 
-const ServiceCard: FC<ServiceType> = ({
+interface ServiceCardProps extends ServiceType {
+  projects: ProjectType[];
+}
+
+const ServiceCard: FC<ServiceCardProps> = ({
   image,
   alt,
   name,
@@ -11,7 +16,10 @@ const ServiceCard: FC<ServiceType> = ({
   description,
   options,
   pdfUrl,
+  projects,
 }) => {
+  const limitedProjects = projects.slice(0, 2);
+
   return (
     <div>
       <h2 className="mt-8 font-merriweather text-base font-semibold tracking-tight md:text-3xl">
@@ -28,6 +36,20 @@ const ServiceCard: FC<ServiceType> = ({
                 <li key={option}>{option}</li>
               ))}
             </ul>
+          )}
+          {limitedProjects.length > 0 && (
+            <div className="mt-6 flex items-center">
+              <h3 className="font-semibold mr-4">Related Projects:</h3>
+              <div className="flex space-x-4">
+                {limitedProjects.map((project) => (
+                  <Link key={project.id} href={`/projects/${project.slug}`}>
+                    <p className="text-white hover:underline">
+                      {project.name}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
           )}
         </div>
         <div className="my-10 ml-2 mt-2 w-full md:my-0 md:max-w-xs md:flex-1 lg:max-w-sm">

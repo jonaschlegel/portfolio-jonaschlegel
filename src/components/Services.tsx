@@ -1,4 +1,4 @@
-import { serviceData } from '@/data/content';
+import { projectsData, serviceData } from '@/data/content';
 import React from 'react';
 import ServiceCard from './ServiceCard';
 
@@ -12,7 +12,11 @@ const Services = () => {
       </div>
       <div className="divide-y divide-neutral-500">
         {serviceData.servicesList.map((service) => {
-          return <ServiceCard key={service.name} {...service} />;
+          const relatedProjects = projectsData.projectsList.filter((project) =>
+            project.services.includes(service.name.toLowerCase())
+          );
+
+          return <ServiceCard key={service.name} {...service} projects={relatedProjects} />;
         })}
       </div>
     </div>
