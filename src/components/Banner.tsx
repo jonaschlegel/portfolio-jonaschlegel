@@ -15,7 +15,7 @@ const Banner: FC = () => {
             ))}
             <div className="mt-4 text-center">
               <ButtonSecondary className="bg-primary-accent font-semibold text-black border-none" pdfUrl={"/data/Portfolio_JonaSchlegel.pdf"}>
-                Downlod my Portfolio
+                Download my Portfolio
               </ButtonSecondary>
             </div>
           </div>

@@ -20,14 +20,13 @@ import {
 } from 'react-icons/bs';
 
 export const navLinks = [
-  { name: 'Home', href: '/' },
   { name: 'Featured Projects', href: '/#project' },
   { name: 'Services', href: '/#service' },
 ];
 
 export const heroSectionData = {
   heading:
-    'Are you looking for a way to elevate your visual science communication?',
+    'Want better visual science communication?',
   text: 'I transform data into narratives, web presences and create illustrative content.',
   statsData: [
     { name: '(Scientific) Articles Written', number: '15' },

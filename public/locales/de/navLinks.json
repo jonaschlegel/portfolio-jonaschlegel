@@ -1,6 +1,5 @@
 {
   "navLinks": [
-    { "name": "Home", "href": "/" },
     { "name": "Projekte", "href": "/#project" },
     { "name": "Dienstleistungen", "href": "/#service" }
   ]
